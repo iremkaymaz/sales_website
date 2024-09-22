@@ -1,0 +1,12 @@
+# Resim dosyaları
+*.jpg
+*.jpeg
+*.png
+
+# Geçici dosyalar
+*.tmp
+*.log
+
+# Klasörleri dışlama
+node_modules/
+dist/
