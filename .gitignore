@@ -1,7 +1,4 @@
-# Resim dosyaları
-*.jpg
-*.jpeg
-*.png
+
 
 # Geçici dosyalar
 *.tmp
