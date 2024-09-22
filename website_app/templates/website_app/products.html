@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+{% load static %}  <!-- Burada static etiketini yüklediğinden emin ol -->
+{% block content %}
+
+
+<div class="alert alert-warning text-center" style="margin-bottom: 20px; background-color:chartreuse; color: black; font-size: small;">
+    Ürünlerimiz Şeffaf Kargo ile Gönderilir
+    <br>
+    Kapıda Ödeme Mevcuttur
+  </div>
+
+<div class="container">
+    <div class="row g-4"> <!-- Kartlar için grid sistemi -->
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/IMG_0150.jpeg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: small;">Termal Kışlık Sihirli Hayalet Siyah Külotlu Çorap (Siyah)</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_1' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_1' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/IMG_0153.jpeg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size: small;">Termal Kışlık Sihirli Hayalet Siyah Külotlu Çorap (Ten Rengi)</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_2' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_2' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/DSC_7112-141.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Kadın İçi Polarlı Yüksek Bel Toparlayıcı Siyah Termal Tayt</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_3' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_3' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/DSC_7143-167.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Unisex (Kadın-Erkek) Manyetik Dik Duruş Korsesi / Kamburluk Önleyici Bel Sırt Omuz Destekleyici Ortopedik Korse
+                    </p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_4' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_4' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/IMG_0049.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Unisex Kışlık Sıcak Tutan Termal Alt Üst İçlik Takım / Pamuklu Termal Takım</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_5' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_5' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3" > <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/6-3.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Ultra Yüksek Bel Premium Siyah Korse Tayt / Sıkılaştırıcı Şekillendirici 2 Beden İncelten Korse Tayt</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_6' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_6' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/DSC_7152-176.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Unisex (Kadın-Erkek) Orjinal Termal Bel Korse Kemer / Etkili Yağ Yakıcı Zayıflatıcı Korse Kemer<p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_7' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_7' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/1-10.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;"> Kadın Toparlayıcı Dikişsiz İpeksi Örme Atlet Korse / Bel Göğüs Göbek 2 Beden İnce Görünüm </p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_8' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_8' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/IMG_0211.jpeg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Erkek Toparlayıcı Atlet Korse</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_9' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_9' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/DSC_1025-71-300x450.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;">Kadın Toparlayıcı Dikişsiz Örme Kalın Askılı Crop Büstiyer</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_10' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_10' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6 col-sm-6 col-md-3"> <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+            <div class="card">
+                <img src="{% static 'website_app/DSC_7079-108.jpg' %}" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;"> Kadın Maksimum Terleten Termal Agraflı Tayt Zayıflatan Vücut Şekillendirici Toparlayıcı Korse</p>
+                    <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                    <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                    <a href="{% url 'website_app:info_11' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                    <a href="{% url 'website_app:order_11' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-6 col-sm-6 col-md-3" > <!-- Mobilde yarım genişlik, tablette yarım, büyük ekranlarda dörtte bir -->
+                <div class="card">
+                    <img src="{% static 'website_app/DSC_6994-28.jpg' %}" class="card-img-top">
+                    <div class="card-body" >
+                        <p class="card-title" style="font-size:small; margin-top: 5px; margin-bottom: 5px;"> Kadın Termal Sauna Yarım Kol Fermuarlı Takım </p>
+                        <p class="card-text" style="font-size:large; margin-top: 5px; margin-bottom: 5px;">399.99 TL</p>
+                        <p class="card-text" style="color: blanchedalmond; background-color: brown; text-align: center; font-size:x-small; margin: 2px;">Ücretsiz Kargo</p>
+                        <a href="{% url 'website_app:info_12' %}" class="btn btn-primary" style="padding: 0.25rem 0.5rem; font-size: x-small; margin-bottom: 2px;">Ürünü İncele</a>
+                        <a href="{% url 'website_app:order_12' %}" class="btn btn-success" style="padding: 0.25rem 0.5rem; font-size: x-small;">Sipariş ver</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+{% endblock %}

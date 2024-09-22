@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container text-center">
+    <h2 class="h4 h-sm3 h-md2 h-lg1 mt-4 mt-md-6 mb-3 mb-md-4">Info 2</h2>
+
+    <!-- Resimleri yan yana koymak için flexbox kullanıyoruz -->
+    <div class="d-flex justify-content-center flex-wrap">
+        <img src="{% static 'website_app/IMG_0211.jpeg' %}" alt="ürün 1" class="img-fluid custom-img m-2">
+        <img src="{% static 'website_app/IMG_0208.jpeg' %}" alt="ürün 2" class="img-fluid custom-img m-2">
+        <img src="{% static 'website_app/IMG_0214.jpeg' %}" alt="ürün 3" class="img-fluid custom-img m-2">
+        <img src="{% static 'website_app/IMG_0209-768x1138.jpeg' %}" alt="ürün 4" class="img-fluid custom-img m-2">
+        <img src="{% static 'website_app/IMG_0222.jpeg' %}" alt="ürün 3" class="img-fluid custom-img m-2">
+
+        
+    </div>
+</div>
+
+<style>
+    .custom-img {
+        max-width: 25%; /* Büyük ekranlarda resimleri %25 genişlikte tut */
+    }
+
+    @media (max-width: 991px) {
+        .custom-img {
+            max-width: 100%; /* Küçük ekranlarda tam genişlik */
+        }
+    }
+</style>
+
+{% endblock %}
