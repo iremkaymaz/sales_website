@@ -31,7 +31,7 @@ def order(request):
 
 def order_1(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -53,7 +53,7 @@ def order_1(request):
     
 def order_2(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -75,7 +75,7 @@ def order_2(request):
     
 def order_3(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -98,7 +98,7 @@ def order_3(request):
 
 def order_4(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -122,7 +122,7 @@ def order_4(request):
 
 def order_5(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -144,7 +144,7 @@ def order_5(request):
 
 def order_6(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -167,7 +167,7 @@ def order_6(request):
 
 def order_7(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -189,7 +189,7 @@ def order_7(request):
 
 def order_8(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -213,7 +213,7 @@ def order_8(request):
 
 def order_9(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -237,7 +237,7 @@ def order_9(request):
 
 def order_10(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -260,7 +260,7 @@ def order_10(request):
 
 def order_11(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]
@@ -283,7 +283,7 @@ def order_11(request):
 
 def order_12(request):
     current_time = datetime.datetime.now()
-    if request.POST:
+    if request.method=='POST':
         name=request.POST["first_name"]
         surname=request.POST["last_name"]
         telephone=request.POST["telephone"]

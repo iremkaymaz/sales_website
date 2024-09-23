@@ -24,9 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9jgtt46a=@kn^e-)wu^bl-1k=h-bm6v68pdox%goa!hc4_l-85'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['209.38.245.180','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['korsemil.com','127.0.0.1','localhost']
+
+CSRF_TRUSTED_ORIGINS = ['https://korsemil.com', 'http://127.0.0.1:8000']
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 
 # Application definition
@@ -119,6 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "website_app/static",]
+STATIC_ROOT = BASE_DIR / "staticfiles" 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
