@@ -7,7 +7,7 @@
   <a href="{% url 'website_app:size_table' %}" style="color: inherit; text-decoration: underline;">beden tablosundan</a> yardım alınız.
 </div>
 
-<form action="" method="POST" style="margin: 5%;">
+<form action="{% url 'website_app:order_1' %}" method="POST" style="margin: 5%;">
     {% csrf_token %}
     <div class="container" style="max-width: 500px; width: 100%;">
       <div class="mb-3">
@@ -146,7 +146,6 @@
         <label for="colour" class="form-label">Renk Seçiniz</label>
         <select class="form-select" id="colour" name="colour" required>
           <option value="" disabled selected>Renk Seçiniz</option>
-          <option value="Ten Rengi">Ten Rengi</option>
           <option value="Siyah">Siyah</option>
         </select>
       </div>
