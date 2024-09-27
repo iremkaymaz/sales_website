@@ -3,11 +3,13 @@ from . import models
 from django.urls import reverse
 from django.shortcuts import render, redirect
 import datetime
+from django.views.decorators.csrf import csrf_protect
 # Create your views here.
 
 def products(request):
       return render(request,'website_app/products.html')
       
+@csrf_protect      
 def order(request):
     if request.POST:
         name=request.POST["first_name"]
@@ -28,7 +30,7 @@ def order(request):
     else:
         return render(request,'website_app/order.html')
     
-
+@csrf_protect
 def order_1(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -50,7 +52,8 @@ def order_1(request):
         return redirect(reverse('website_app:order_success'))
     else:
         return render(request,'website_app/order_1.html')
-    
+
+@csrf_protect
 def order_2(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -72,7 +75,8 @@ def order_2(request):
         return redirect(reverse('website_app:order_success'))
     else:
         return render(request,'website_app/order_2.html')
-    
+
+@csrf_protect
 def order_3(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -96,6 +100,7 @@ def order_3(request):
         return render(request,'website_app/order_3.html')
 
 
+@csrf_protect
 def order_4(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -119,7 +124,7 @@ def order_4(request):
         return render(request,'website_app/order_4.html')
     
 
-
+@csrf_protect
 def order_5(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -142,6 +147,7 @@ def order_5(request):
     else:
         return render(request,'website_app/order_5.html')
 
+@csrf_protect
 def order_6(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -164,7 +170,7 @@ def order_6(request):
     else:
         return render(request,'website_app/order_6.html')
 
-
+@csrf_protect
 def order_7(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -187,6 +193,8 @@ def order_7(request):
     else:
         return render(request,'website_app/order_7.html')
 
+
+@csrf_protect
 def order_8(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -210,7 +218,7 @@ def order_8(request):
         return render(request,'website_app/order_8.html')
 
 
-
+@csrf_protect
 def order_9(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -234,7 +242,7 @@ def order_9(request):
         return render(request,'website_app/order_9.html')
 
 
-
+@csrf_protect
 def order_10(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -258,6 +266,7 @@ def order_10(request):
         return render(request,'website_app/order_10.html')
 
 
+@csrf_protect
 def order_11(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -281,6 +290,7 @@ def order_11(request):
         return render(request,'website_app/order_11.html')
 
 
+@csrf_protect
 def order_12(request):
     current_time = datetime.datetime.now()
     if request.method=='POST':
@@ -303,10 +313,11 @@ def order_12(request):
     else:
         return render(request,'website_app/order_12.html')
 
-
+@csrf_protect
 def size_table(request):
    	 return render(request,'website_app/size_table.html')
 
+@csrf_protect
 def order_success(request):
       return render(request, 'website_app/order_success.html')
 
