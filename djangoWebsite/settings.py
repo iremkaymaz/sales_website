@@ -24,18 +24,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9jgtt46a=@kn^e-)wu^bl-1k=h-bm6v68pdox%goa!hc4_l-85'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['209.38.245.180', 'korsemil.com', 'example.com']
-CSRF_TRUSTED_ORIGINS = ['http://korsemil.com', 'http://209.38.245.180:80']
+ALLOWED_HOSTS = ['127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 
 
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = ['https://korsemil.com', 'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
 
 
 # Application definition
@@ -78,15 +78,9 @@ TEMPLATES = [
     },
 ]
 
-CSRF_COOKIE_SECURE = False
-SESSION_COOKIE_SECURE = False
 
 WSGI_APPLICATION = 'djangoWebsite.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://korsemil.com',
-    'https://korsemil.com',
-]
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -128,15 +122,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-# settings.py
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Gmail kullanıyorsan
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'iremkymz1@gmail.com'
-EMAIL_HOST_PASSWORD = 'Kuzeyli5757'
-DEFAULT_FROM_EMAIL = 'iremkymz1@gmail.com'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/

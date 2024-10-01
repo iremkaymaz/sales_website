@@ -15,7 +15,6 @@ class Customer(models.Model):
     payment_method = models.TextField(max_length=70, default="")
     product_id = models.IntegerField(null=True, blank=True)
     date = models.TextField(max_length=100, default="")
-    #product_name = models.CharField(max_length=200,default="")
 
     def __str__(self):
-        return f"Ürün adı:{self.product_id} Adet:{self.number} Beden:{self.size} Renk:{self.colour} Tarih:{self.date}"
+        return f"Ürün adı:{self.product_id} Adet:{self.number} Beden:{self.size} Renk:{self.colour}"
